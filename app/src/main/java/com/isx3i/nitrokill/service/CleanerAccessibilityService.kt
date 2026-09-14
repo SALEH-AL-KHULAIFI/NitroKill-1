@@ -9,14 +9,11 @@ class CleanerAccessibilityService : AccessibilityService() {
 
     companion object {
         private const val TAG = "NitroKillCleaner"
-
-        private const val ACTION_DISMISS =
-            AccessibilityNodeInfo.AccessibilityAction.ACTION_DISMISS.id
     }
 
     override fun onAccessibilityEvent(event: AccessibilityEvent?) {
-        // Intentionally passive.
-        // The service only acts when dismissCurrentWindow() is called.
+        // The service remains passive.
+        // Actions are performed only when explicitly requested.
     }
 
     override fun onInterrupt() {
@@ -26,17 +23,17 @@ class CleanerAccessibilityService : AccessibilityService() {
     /**
      * Attempts to dismiss the currently active window.
      *
-     * @return true if a dismiss action was successfully performed.
+     * @return true if the dismiss action was performed successfully.
      */
     fun dismissCurrentWindow(): Boolean {
         return try {
             val rootNode = rootInActiveWindow ?: return false
 
-            val result = dismissNode(rootNode)
-
-            rootNode.recycle()
-
-            result
+            try {
+                dismissNode(rootNode)
+            } finally {
+                rootNode.recycle()
+            }
         } catch (e: Exception) {
             Log.e(TAG, "Failed to dismiss current window", e)
             false
@@ -49,13 +46,15 @@ class CleanerAccessibilityService : AccessibilityService() {
     private fun dismissNode(node: AccessibilityNodeInfo): Boolean {
 
         for (action in node.actionList) {
-            if (action.id == ACTION_DISMISS) {
+            if (
+                action.id ==
+                AccessibilityNodeInfo.AccessibilityAction.ACTION_DISMISS.id
+            ) {
                 return node.performAction(action.id)
             }
         }
 
         for (index in 0 until node.childCount) {
-
             val child = node.getChild(index) ?: continue
 
             try {
