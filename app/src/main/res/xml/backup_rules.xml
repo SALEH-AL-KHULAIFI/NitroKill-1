@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Usage-stats and preference data only; nothing sensitive is stored. -->
+    <include domain="sharedpref" path="." />
+</full-backup-content>

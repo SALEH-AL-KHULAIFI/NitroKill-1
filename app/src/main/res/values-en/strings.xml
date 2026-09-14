@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NitroKill</string>
+
+    <string name="notification_channel_name">Internet speed indicator</string>
+    <string name="notification_channel_desc">Ongoing notification showing the current internet speed</string>
+    <string name="notification_title">Internet speed</string>
+
+    <string name="main_title">NitroKill</string>
+    <string name="start_monitor">Start monitoring</string>
+    <string name="stop_monitor">Stop monitoring</string>
+
+    <string name="menu_options">Options</string>
+    <string name="menu_reenable">Re-enable</string>
+    <string name="menu_hide_exit">Hide &amp; exit</string>
+
+    <string name="options_title">Options</string>
+    <string name="action_back">Back</string>
+    <string name="options_language">Language</string>
+    <string name="lang_arabic">العربية</string>
+    <string name="lang_english">English</string>
+    <string name="options_permissions">Required permissions</string>
+    <string name="perm_notification">Notification permission</string>
+    <string name="perm_accessibility">App-closer service (Accessibility)</string>
+    <string name="perm_usage_access">Usage-access permission</string>
+    <string name="perm_grant">Enable</string>
+    <string name="perm_granted">Granted</string>
+
+    <string name="options_about">About</string>
+    <string name="about_version">Version 1</string>
+    <string name="about_email">saleh.mabkhot@hotmail.com</string>
+    <string name="about_developer">Developer: @iSx3i</string>
+
+    <string name="disclaimer_title">Notice</string>
+    <string name="disclaimer_body">Please note this app may show inaccurate data usage if you close it or it stops running for any reason. We are not responsible for any resulting damage or financial loss.</string>
+
+    <string name="table_title">Today\'s usage</string>
+    <string name="table_date">Date</string>
+    <string name="table_mobile">Mobile</string>
+    <string name="table_transfer">Transfer</string>
+    <string name="table_total">Total</string>
+
+    <string name="accessibility_service_description">NitroKill uses this service only to open the Recent Apps screen and close background apps when you tap \"Re-enable\". It is not used to read your screen content or for any other purpose.</string>
+    <string name="cleaner_toast_done">Background apps closed</string>
+    <string name="cleaner_toast_enable_first">Enable the closer service from Options first</string>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NitroKill</string>
+
+    <!-- Notification channel -->
+    <string name="notification_channel_name">مؤشر سرعة الإنترنت</string>
+    <string name="notification_channel_desc">إشعار دائم يعرض سرعة الإنترنت الحالية</string>
+    <string name="notification_title">سرعة الإنترنت</string>
+
+    <!-- Main screen -->
+    <string name="main_title">NitroKill</string>
+    <string name="start_monitor">تشغيل المراقبة</string>
+    <string name="stop_monitor">إيقاف المراقبة</string>
+
+    <!-- Overflow menu (the 3-option button) -->
+    <string name="menu_options">خيارات</string>
+    <string name="menu_reenable">إعادة تمكين</string>
+    <string name="menu_hide_exit">إخفاء وخروج</string>
+
+    <!-- Options screen -->
+    <string name="options_title">الخيارات</string>
+    <string name="action_back">رجوع</string>
+    <string name="options_language">اللغة</string>
+    <string name="lang_arabic">العربية</string>
+    <string name="lang_english">English</string>
+    <string name="options_permissions">الأذونات المطلوبة</string>
+    <string name="perm_notification">إذن الإشعارات</string>
+    <string name="perm_accessibility">خدمة إغلاق التطبيقات (Accessibility)</string>
+    <string name="perm_usage_access">إذن الوصول لبيانات الاستخدام</string>
+    <string name="perm_grant">تفعيل</string>
+    <string name="perm_granted">مُفعّل</string>
+
+    <!-- About -->
+    <string name="options_about">حول</string>
+    <string name="about_version">الإصدار 1</string>
+    <string name="about_email">saleh.mabkhot@hotmail.com</string>
+    <string name="about_developer">المطور: @iSx3i</string>
+
+    <!-- Disclaimer -->
+    <string name="disclaimer_title">تنويه</string>
+    <string name="disclaimer_body">يرجى ملاحظة أن هذا التطبيق قد يظهر استخدام بيانات غير دقيق إذا أغلق المستخدم التطبيق أو حدث توقف للتطبيق، لذلك نحن غير مسؤولين عن أي ضرر أو خسائر مادية.</string>
+
+    <!-- Usage table -->
+    <string name="table_title">استهلاك اليوم</string>
+    <string name="table_date">التاريخ</string>
+    <string name="table_mobile">جوال</string>
+    <string name="table_transfer">انتقال</string>
+    <string name="table_total">المجموع</string>
+
+    <!-- Accessibility service -->
+    <string name="accessibility_service_description">تستخدم NitroKill هذه الخدمة حصراً لفتح شاشة التطبيقات الأخيرة وإغلاق التطبيقات العاملة في الخلفية عند طلبك ذلك من زر \"إعادة تمكين\". لا تُستخدم لقراءة محتوى شاشتك أو أي غرض آخر.</string>
+    <string name="cleaner_toast_done">تم تنظيف التطبيقات العاملة في الخلفية</string>
+    <string name="cleaner_toast_enable_first">فعّل خدمة الإغلاق أولاً من الخيارات</string>
+</resources>
